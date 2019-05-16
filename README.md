@@ -1,7 +1,19 @@
 # CardBinEX
 
-Elixir module to get the creditcard brand based in the first digits.
+[Elixir](https://elixir-lang.org/) module to get the CreditCard brand based in the first digits.
 
+
+## Valid CreditCard brands
+
+ | brand            | alias      |
+ |------------------|------------|
+ | Visa             | `visa`     |
+ | Elo              | `elo`      |
+ | JBC              | `jbc`      |
+ | Diners           | `diners`   |
+ | Discover         | `discover` |
+ | MasterCard       | `master`   |
+ | American Express | `amex`     |
 
 ## Install
 
@@ -15,14 +27,14 @@ end
 
 ## Usage
 
-Get creditcard brand
+Get CreditCard brand
 
 ```elixir
-iex> Card.brand_from_number(("4716892")
+iex> Card.brand_from_number("4716892")
 {:ok, "visa"}
 ```
 
-Invalid creditcard brand
+Invalid CreditCard brand
 
 ```elixir
 iex> Card.brand_from_number("9716892")

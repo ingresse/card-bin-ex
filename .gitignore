@@ -1,0 +1,13 @@
+# App artifacts
+/_build
+/db
+/deps
+/*.ez
+
+# Test Coverage
+cover/
+
+# Generated on crash by the VM
+erl_crash.dump
+
+.DS_Store
