@@ -1,12 +1,17 @@
 version: 2
 jobs:
   build:
-    machine: true
+    parallelism: 1
+    docker:
+      - image: circleci/elixir:1.7.3
+        environment:
+          MIX_ENV: test
+    working_directory: ~/card-bin-ex
     steps:
       - checkout
       - run: mix local.hex --force
       - run: mix local.rebar --force
       - run: mix deps.get
-      - run: MIX_ENV=test mix coveralls.html
+      - run: mix coveralls.html
       - store_artifacts:
           path: ./cover
