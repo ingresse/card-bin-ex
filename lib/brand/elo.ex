@@ -1,9 +1,7 @@
-defmodule Card.Brand.Elo do
-  @moduledoc """
-  Elo Card Brand
-  """
+defmodule CardBinEx.Brand.Elo do
+  @moduledoc false
 
-  @behaviour Card.Brand
+  @behaviour CardBinEx.Brand
 
   @doc false
   def patterns do

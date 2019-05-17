@@ -11,6 +11,6 @@ msgid ""
 msgstr ""
 
 #, elixir-format
-#: lib/card.ex:33
+#: lib/card_bin.ex:64
 msgid "invalid card number"
 msgstr ""
