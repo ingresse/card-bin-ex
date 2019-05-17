@@ -7,16 +7,45 @@ defmodule Card.MixProject do
       version: "1.0.0",
       elixir: "~> 1.7",
       compilers: [:gettext] ++ Mix.compilers,
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
       deps: deps(),
-      test_coverage: [tool: ExCoveralls]
+      test_coverage: [
+        tool: ExCoveralls
+      ]
+      description: description,
+      package: package
+    ]
+  end
+
+  defp description do
+    """
+    Module to discover the CreditCard brand based in the first digits
+    """
+  end
+
+  defp package do
+    [
+      files: [
+        "lib",
+        "mix.exs",
+        "README*",
+        "LICENSE*"
+      ],
+      maintainers: [
+        "Ingresse",
+        "Vitor Leal"
+      ],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/ingresse/card-bin-ex"
+      }
     ]
   end
 
   def application do
     [
-      extra_applications: [
-        :logger
-      ]
+      extra_applications: [:logger]
     ]
   end
 
