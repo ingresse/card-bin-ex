@@ -1,6 +1,8 @@
-# CardBinEX ![CircleCI](https://circleci.com/gh/ingresse/card-bin-ex.svg?style=svg&circle-token=85d26c37066199b5453a20bc20b2fe994fc9cd34)
+# :credit_card: CardBinEX
 
-[Elixir](https://elixir-lang.org/) module to get the CreditCard brand based in the first digits.
+![CircleCI](https://circleci.com/gh/ingresse/card-bin-ex.svg?style=svg&circle-token=85d26c37066199b5453a20bc20b2fe994fc9cd34)
+
+[Elixir](https://elixir-lang.org/) module to discover the CreditCard brand based in the first digits.
 
 
 ## Valid CreditCard brands
@@ -15,6 +17,7 @@
  | MasterCard       | `master`   |
  | American Express | `amex`     |
 
+
 ## Install
 
 ```elixir
@@ -24,6 +27,7 @@ def deps do
   ]
 end
 ```
+
 
 ## Usage
 
