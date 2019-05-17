@@ -31,7 +31,7 @@ end
 
 ## Usage
 
-Get the creditcard brand base in the first digits
+Get the creditcard brand base in the first digits.
 
 ```elixir
 iex> CardBinEx.brand_from_number("4716892")
@@ -41,14 +41,9 @@ iex> CardBinEx.brand_from_number("9716892")
 {:error, :card_brand, "9716892"}
 ```
 
-```elixir
-iex> CardBinEx.brand_from_number!("4716892")
-"visa"
-```
+Get the creditcard brand base in the first digits and return only the brand.
 
-
-Get the creditcard brand base in the first digits and return only the brand
-It will raise `CardBinEx.Error` if is an invalid bin
+It will raise `CardBinEx.Error` if is an invalid bin.
 
 ```elixir
 iex> CardBinEx.brand_from_number!("4716892")
