@@ -34,7 +34,7 @@ iex> Card.brand_from_number("4716892")
 {:ok, "visa"}
 ```
 
-```
+```elixir
 iex> Card.brand_from_number!("4716892")
 "visa"
 ```
