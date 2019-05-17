@@ -12,7 +12,7 @@ defmodule Card.MixProject do
       deps: deps(),
       test_coverage: [
         tool: ExCoveralls
-      ]
+      ],
       description: description,
       package: package
     ]
