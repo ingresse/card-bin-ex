@@ -34,6 +34,11 @@ iex> Card.brand_from_number("4716892")
 {:ok, "visa"}
 ```
 
+```
+iex> Card.brand_from_number!("4716892")
+"visa"
+```
+
 Invalid CreditCard brand
 
 ```elixir
