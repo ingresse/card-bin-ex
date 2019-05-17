@@ -6,15 +6,14 @@ defmodule Card.MixProject do
       app: :card_bin_ex,
       version: "1.0.0",
       elixir: "~> 1.7",
-      compilers: [:gettext] ++ Mix.compilers,
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps(),
       test_coverage: [
         tool: ExCoveralls
       ],
-      description: description,
-      package: package
+      description: description(),
+      package: package()
     ]
   end
 
