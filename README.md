@@ -23,7 +23,7 @@
 ```elixir
 def deps do
   [
-    {:card_bin_ex, git: "https://github.com/ingresse/card-bin-ex.git", tag: "1.0.0"}
+    {:card_bin_ex, "~> 1.0"}
   ]
 end
 ```
