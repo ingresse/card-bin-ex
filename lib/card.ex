@@ -37,6 +37,7 @@ defmodule Card do
   defp respond(brand, number) when is_nil(brand) do
     {:error, :card_bin, number}
   end
+
   defp respond(brand, _number) do
     {:ok, brand}
   end
@@ -50,6 +51,7 @@ defmodule Card do
   end
 
   defp format(brand) when is_nil(brand), do: nil
+
   defp format(brand) do
     Atom.to_string(brand)
   end

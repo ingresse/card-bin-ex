@@ -13,7 +13,7 @@ defmodule Card.Brand do
     Visa
   }
 
-  @callback patterns() :: List.t
+  @callback patterns() :: List.t()
 
   @doc """
   Card brand options
