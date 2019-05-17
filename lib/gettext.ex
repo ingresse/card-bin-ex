@@ -1,6 +1,4 @@
-defmodule Card.Gettext do
-  @moduledoc """
-  Providing Internationalization with a gettext-based API.
-  """
+defmodule CardBinEx.Gettext do
+  @moduledoc false
   use Gettext, otp_app: :card_bin_ex
 end

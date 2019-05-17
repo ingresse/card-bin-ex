@@ -31,21 +31,33 @@ end
 
 ## Usage
 
-Get CreditCard brand
+Get the creditcard brand base in the first digits
 
 ```elixir
-iex> Card.brand_from_number("4716892")
+iex> CardBinEx.brand_from_number("4716892")
 {:ok, "visa"}
+
+iex> CardBinEx.brand_from_number("9716892")
+{:error, :card_brand, "9716892"}
 ```
 
 ```elixir
-iex> Card.brand_from_number!("4716892")
+iex> CardBinEx.brand_from_number!("4716892")
 "visa"
 ```
 
-Invalid CreditCard brand
+
+Get the creditcard brand base in the first digits and return only the brand
+It will raise `CardBinEx.Error` if is an invalid bin
 
 ```elixir
-iex> Card.brand_from_number("9716892")
-{:error, :card_brand, "9716892"}
+iex> CardBinEx.brand_from_number!("4716892")
+"visa"
+
+iex> try do
+...>   CardBinEx.brand_from_number!("9716892")
+...> rescue
+...>   e in CardBinEx.Error -> IO.puts(e.message)
+..> end
 ```
+

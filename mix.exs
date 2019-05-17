@@ -40,7 +40,11 @@ defmodule Card.MixProject do
       licenses: ["MIT"],
       links: %{
         "GitHub" => "https://github.com/ingresse/card-bin-ex"
-      }
+      },
+      docs: [
+        main: "CardBinEx",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -53,6 +57,7 @@ defmodule Card.MixProject do
   defp deps do
     [
       {:gettext, "~> 0.16"},
+      {:ex_doc, "~> 0.20", only: :dev, runtime: false},
       {:excoveralls, "~> 0.10.1", only: :test},
       {:credo, "~> 0.9.3", only: [:dev, :test], runtime: false}
     ]

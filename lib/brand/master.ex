@@ -1,9 +1,7 @@
-defmodule Card.Brand.Master do
-  @moduledoc """
-  Master Card Brand
-  """
+defmodule CardBinEx.Brand.Master do
+  @moduledoc false
 
-  @behaviour Card.Brand
+  @behaviour CardBinEx.Brand
 
   @doc false
   def patterns do

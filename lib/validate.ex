@@ -1,7 +1,5 @@
-defmodule Card.Validate do
-  @moduledoc """
-  Validations of credit_card brand
-  """
+defmodule CardBinEx.Validate do
+  @moduledoc false
 
   @doc """
   Validate brand for number

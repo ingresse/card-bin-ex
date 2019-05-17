@@ -1,9 +1,7 @@
-defmodule Card.Brand.Diners do
-  @moduledoc """
-  Diners Card Brand
-  """
+defmodule CardBinEx.Brand.Diners do
+  @moduledoc false
 
-  @behaviour Card.Brand
+  @behaviour CardBinEx.Brand
 
   @doc false
   def patterns do

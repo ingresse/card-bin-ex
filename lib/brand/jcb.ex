@@ -1,9 +1,7 @@
-defmodule Card.Brand.Jcb do
-  @moduledoc """
-  Jcb Card Brand
-  """
+defmodule CardBinEx.Brand.Jcb do
+  @moduledoc false
 
-  @behaviour Card.Brand
+  @behaviour CardBinEx.Brand
 
   @doc false
   def patterns do

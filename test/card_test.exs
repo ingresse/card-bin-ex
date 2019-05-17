@@ -1,4 +1,4 @@
-defmodule CardTest do
+defmodule CardBinExTest do
   use ExUnit.Case
 
   describe "Validate Brand" do
@@ -192,26 +192,26 @@ defmodule CardTest do
   end
 
   defp test_cards([number, brand]) do
-    {:ok, card_brand} = Card.brand_from_number(number)
+    {:ok, card_brand} = CardBinEx.brand_from_number(number)
 
     assert card_brand == brand
   end
 
   defp test_cards!([number, brand]) do
-    card_brand = Card.brand_from_number!(number)
+    card_brand = CardBinEx.brand_from_number!(number)
 
     assert card_brand == brand
   end
 
   defp test_invalid_cards([number]) do
-    {:error, :card_bin, card_number} = Card.brand_from_number(number)
+    {:error, :card_bin, card_number} = CardBinEx.brand_from_number(number)
 
     assert card_number == number
   end
 
   defp test_invalid_cards!([number]) do
-    assert_raise Card.Error, fn ->
-      Card.brand_from_number!(number)
+    assert_raise CardBinEx.Error, fn ->
+      CardBinEx.brand_from_number!(number)
     end
   end
 end

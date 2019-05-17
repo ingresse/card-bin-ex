@@ -1,9 +1,7 @@
-defmodule Card.Brand do
-  @moduledoc """
-  Card Brand module
-  """
+defmodule CardBinEx.Brand do
+  @moduledoc false
 
-  alias Card.Brand.{
+  alias CardBinEx.Brand.{
     Amex,
     Diners,
     Discover,
@@ -16,7 +14,7 @@ defmodule Card.Brand do
   @callback patterns() :: List.t()
 
   @doc """
-  Card brand options
+  CardBinEx brand options
   """
   def options do
     ~w(
