@@ -1,7 +1,5 @@
 # :credit_card: CardBinEX
 
-![CircleCI](https://circleci.com/gh/ingresse/card-bin-ex.svg?style=svg&circle-token=85d26c37066199b5453a20bc20b2fe994fc9cd34)
-
 [Elixir](https://elixir-lang.org/) module to discover the CreditCard brand based in the first digits.
 
 
