@@ -16,8 +16,14 @@ action "Lint" {
   needs = ["Filter Branch"]
 }
 
+action "Deps" {
+  uses = "ingresse/gh-actions/elixir/mix@master"
+  args = "deps.get"
+  needs = ["Filter Branch"]
+}
+
 action "Test" {
   uses = "ingresse/gh-actions/elixir/mix@master"
   args = "test"
-  needs = ["Lint"]
+  needs = ["Deps"]
 }
