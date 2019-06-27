@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.2">
-    <meta name="project" content="card_bin_ex v1.0.0">
-    <title>CardBinEx — card_bin_ex v1.0.0</title>
+    <meta name="project" content="card_bin_ex v1.1.0">
+    <title>CardBinEx — card_bin_ex v1.1.0</title>
     <link rel="stylesheet" href="dist/html-d9f58a6320b5bfa6dd77.css" />
     <script src="dist/sidebar_items-33af4548a9.js"></script>
       <script src="docs_config.js"></script>
@@ -44,7 +44,7 @@
       <a href="api-reference.html" class="sidebar-projectName">
 card_bin_ex      </a>
       <h2 class="sidebar-projectVersion">
-        v1.0.0
+        v1.1.0
       </h2>
     </div>
   </div>
@@ -67,7 +67,7 @@ card_bin_ex      </a>
 
 
       <h1>
-        <small class="app-vsn">card_bin_ex v1.0.0</small>
+        <small class="app-vsn">card_bin_ex v1.1.0</small>
 CardBinEx              </h1>
 
 
@@ -105,6 +105,9 @@ CardBinEx              </h1>
 </tr>
 <tr>
 <td style="text-align: left">MasterCard</td><td style="text-align: left"><code class="inline">master</code></td>
+</tr>
+<tr>
+<td style="text-align: left">Hipercard</td><td style="text-align: left"><code class="inline">hipercard</code></td>
 </tr>
 <tr>
 <td style="text-align: left">American Express</td><td style="text-align: left"><code class="inline">amex</code></td>
@@ -162,11 +165,11 @@ Functions          </h1>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number</span><span class="p" data-group-id="2575117221-1">(</span><span class="s">&quot;4716892&quot;</span><span class="p" data-group-id="2575117221-1">)</span><span class="w">
-</span><span class="p" data-group-id="2575117221-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;visa&quot;</span><span class="p" data-group-id="2575117221-2">}</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number</span><span class="p" data-group-id="0794208574-1">(</span><span class="s">&quot;4716892&quot;</span><span class="p" data-group-id="0794208574-1">)</span><span class="w">
+</span><span class="p" data-group-id="0794208574-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;visa&quot;</span><span class="p" data-group-id="0794208574-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number</span><span class="p" data-group-id="2575117221-3">(</span><span class="s">&quot;9716892&quot;</span><span class="p" data-group-id="2575117221-3">)</span><span class="w">
-</span><span class="p" data-group-id="2575117221-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="ss">:card_brand</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;9716892&quot;</span><span class="p" data-group-id="2575117221-4">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number</span><span class="p" data-group-id="0794208574-3">(</span><span class="s">&quot;9716892&quot;</span><span class="p" data-group-id="0794208574-3">)</span><span class="w">
+</span><span class="p" data-group-id="0794208574-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="ss">:card_brand</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;9716892&quot;</span><span class="p" data-group-id="0794208574-4">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="brand_from_number!/1">
@@ -184,14 +187,14 @@ Functions          </h1>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number!</span><span class="p" data-group-id="7054847518-1">(</span><span class="s">&quot;4716892&quot;</span><span class="p" data-group-id="7054847518-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number!</span><span class="p" data-group-id="5116432296-1">(</span><span class="s">&quot;4716892&quot;</span><span class="p" data-group-id="5116432296-1">)</span><span class="w">
   </span><span class="s">&quot;visa&quot;</span><span class="w">
 
-  </span><span class="gp unselectable">iex&gt; </span><span class="k">try</span><span class="w"> </span><span class="k" data-group-id="7054847518-2">do</span><span class="w">
-  </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number!</span><span class="p" data-group-id="7054847518-3">(</span><span class="s">&quot;9716892&quot;</span><span class="p" data-group-id="7054847518-3">)</span><span class="w">
-  </span><span class="gp unselectable">...&gt; </span><span class="k" data-group-id="7054847518-2">rescue</span><span class="w">
-  </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="n">e</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">CardBinEx.Error</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n">puts</span><span class="p" data-group-id="7054847518-4">(</span><span class="n">e</span><span class="o">.</span><span class="n">message</span><span class="p" data-group-id="7054847518-4">)</span><span class="w">
-  </span><span class="gp unselectable">...&gt; </span><span class="k" data-group-id="7054847518-2">end</span><span class="w">
+  </span><span class="gp unselectable">iex&gt; </span><span class="k">try</span><span class="w"> </span><span class="k" data-group-id="5116432296-2">do</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="nc">CardBinEx</span><span class="o">.</span><span class="n">brand_from_number!</span><span class="p" data-group-id="5116432296-3">(</span><span class="s">&quot;9716892&quot;</span><span class="p" data-group-id="5116432296-3">)</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="k" data-group-id="5116432296-2">rescue</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="n">e</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">CardBinEx.Error</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n">puts</span><span class="p" data-group-id="5116432296-4">(</span><span class="n">e</span><span class="o">.</span><span class="n">message</span><span class="p" data-group-id="5116432296-4">)</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="k" data-group-id="5116432296-2">end</span><span class="w">
   </span><span class="n">invalid</span><span class="w"> </span><span class="n">card</span><span class="w"> </span><span class="n">number</span></code></pre>
   </section>
 </section>
