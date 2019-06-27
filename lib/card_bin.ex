@@ -5,15 +5,16 @@ defmodule CardBinEx do
 
   ### Valid CreditCard brands
 
-   | brand            | alias      |
-   |------------------|------------|
-   | Visa             | `visa`     |
-   | Elo              | `elo`      |
-   | JBC              | `jbc`      |
-   | Diners           | `diners`   |
-   | Discover         | `discover` |
-   | MasterCard       | `master`   |
-   | American Express | `amex`     |
+   | brand            | alias       |
+   |------------------|-------------|
+   | Visa             | `visa`      |
+   | Elo              | `elo`       |
+   | JBC              | `jbc`       |
+   | Diners           | `diners`    |
+   | Discover         | `discover`  |
+   | MasterCard       | `master`    |
+   | Hipercard        | `hipercard` |
+   | American Express | `amex`      |
   """
 
   import CardBinEx.Gettext
