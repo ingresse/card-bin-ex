@@ -5,6 +5,6 @@ defmodule CardBinEx.Brand.Hipercard do
 
   @doc false
   def patterns do
-    [606282]
+    [606_282]
   end
 end
