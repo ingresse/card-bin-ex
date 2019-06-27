@@ -6,6 +6,7 @@ defmodule CardBinEx.Brand do
     Diners,
     Discover,
     Elo,
+    Hipercard,
     Jcb,
     Master,
     Visa
@@ -24,6 +25,7 @@ defmodule CardBinEx.Brand do
       diners
       discover
       jcb
+      hipercard
       visa
     )a
   end
@@ -39,6 +41,7 @@ defmodule CardBinEx.Brand do
       diners: Diners,
       discover: Discover,
       jcb: Jcb,
+      hipercard: Hipercard,
       visa: Visa
     }
     |> Map.get(brand)

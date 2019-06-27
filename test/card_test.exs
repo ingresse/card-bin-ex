@@ -171,6 +171,20 @@ defmodule CardBinExTest do
       cards
       |> Enum.map(&test_cards!/1)
     end
+
+    @tag :card_brand
+    test "HIPERCARD" do
+      cards = [
+        ["606282", "hipercard"],
+        ["6062821333300000", "hipercard"]
+      ]
+
+      cards
+      |> Enum.map(&test_cards/1)
+
+      cards
+      |> Enum.map(&test_cards!/1)
+    end
   end
 
   describe "Invalid cards" do

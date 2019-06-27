@@ -4,7 +4,7 @@ defmodule Card.MixProject do
   def project do
     [
       app: :card_bin_ex,
-      version: "1.0.0",
+      version: "1.1.0",
       elixir: "~> 1.7",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
