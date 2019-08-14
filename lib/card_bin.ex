@@ -9,7 +9,7 @@ defmodule CardBinEx do
    |------------------|-------------|
    | Visa             | `visa`      |
    | Elo              | `elo`       |
-   | JBC              | `jbc`       |
+   | JCB              | `jcb`       |
    | Diners           | `diners`    |
    | Discover         | `discover`  |
    | MasterCard       | `master`    |
